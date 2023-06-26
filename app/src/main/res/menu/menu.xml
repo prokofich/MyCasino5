@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Lottery"
+        android:id="@+id/id_menu_lottery"
+        android:icon="@drawable/emblema_moneta_and_dollar"/>
+
+    <item
+        android:title="Game"
+        android:icon="@drawable/emblema_kresti"
+        android:id="@+id/id_menu_game"/>
+
+
+</menu>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#116f1c"
+    tools:context=".view.fragments.GamePlayFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:id="@+id/id_gameplay_img_op"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_height="120dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/id_gameplay_tv_name_op"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="nikita"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:background="@drawable/background_tv2_loaing"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/id_gameplay_img_coloda_op"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/id_gameplay_tv_count_card_op"
+                    android:layout_width="60dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="18"
+                    android:gravity="center"
+                    android:textSize="45sp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCenter"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/id_gameplay_img_card_op"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="opponent's card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/id_gameplay_img_sravneniye"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/id_gameplay_img_card_me"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"/>
+                <TextView
+                    android:text="your card"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="140dp"
+                android:textStyle="bold"
+                android:id="@+id/id_gameplay_btn_finish"
+                android:text="finish the game"
+                android:textColor="@color/white"
+                android:background="@drawable/background_button"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="140dp"
+                android:id="@+id/id_gameplay_btn_putcard"
+                android:text="put the card"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/background_button"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/id_gameplay_img_me"
+            android:layout_width="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_height="120dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="nikita"
+                android:id="@+id/id_gameplay_tv_name_me"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:background="@drawable/background_tv2_loaing"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/id_gameplay_img_coloda_me"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="18"
+                    android:id="@+id/id_gameplay_tv_count_card_me"
+                    android:gravity="center"
+                    android:textSize="45sp"
+
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

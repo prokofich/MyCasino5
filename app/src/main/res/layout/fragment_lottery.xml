@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.LotteryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#881e1e"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/id_lottery_img_card_suit"
+            android:layout_marginLeft="170dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="60dp"
+            android:id="@+id/id_lottery_tv_cash"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/id_lottery_img_cash"
+            android:layout_gravity="center"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_lottery_image_zamok"
+        android:layout_width="375dp"
+        android:visibility="gone"
+        android:layout_height="391dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/id_lottery_window"
+        android:layout_width="360dp"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img1"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash1"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_tv_cash1"
+                    android:text="0$"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img2"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash2"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:id="@+id/id_lottery_tv_cash2"
+                    android:text="0$"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img3"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash3"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_tv_cash3"
+                    android:text="0$"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img4"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash4"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_tv_cash4"
+                    android:text="0$"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img5"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash5"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_tv_cash5"
+                    android:text="0$"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img6"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash6"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_tv_cash6"
+                    android:text="0$"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img7"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash7"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_tv_cash7"
+                    android:text="0$"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img8"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash8"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_tv_cash8"
+                    android:text="0$"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/id_lottery_img9"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_img_cash9"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:id="@+id/id_lottery_tv_cash9"
+                    android:text="0$"
+                    android:background="@drawable/background_tv_lot"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="360dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_view2"
+        android:layout_gravity="center"
+        android:layout_height="8dp"/>
+    <TextView
+        android:layout_width="360dp"
+        android:id="@+id/id_lottery_text"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:layout_height="100dp"/>
+
+
+
+
+
+
+</LinearLayout>

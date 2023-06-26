@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:background="@drawable/background_ll_reg"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_height="390dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="REGISTRATION"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_height="60dp"/>
+
+        <View
+            android:layout_width="260dp"
+            android:background="@drawable/background_view1"
+            android:layout_gravity="center"
+            android:layout_height="7dp"/>
+
+        <TextView
+            android:layout_width="222dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="enter your name"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/id_reg_et"
+            android:layout_width="200dp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:hint="name"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:layout_width="222dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="18dp"
+            android:gravity="center"
+            android:text="choose a gender:"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="40dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/id_reg_radio"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="90dp"
+                    android:text="male"
+                    android:id="@+id/id_reg_radio_male"
+                    android:buttonTint="@color/white"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"/>
+
+                <RadioButton
+                    android:layout_width="95dp"
+                    android:text="female"
+                    android:id="@+id/id_reg_radio_female"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20sp"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="129dp"
+            android:id="@+id/id_reg_button_next"
+            android:layout_height="55dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_button"
+            app:cornerRadius="100dp"
+            android:text="NEXT"
+
+
+
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="230dp"
+        android:id="@+id/id_reg_img_suit"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_height="230dp"/>
+
+</LinearLayout>
